@@ -42,7 +42,7 @@ const StartedAvro = () => {
                         </div>
                         <p className="text-white ml-14 opacity-60 text-base">Make Financial Transaction on the Mobile App (Pay Bills, Send<br /> Money, Get Loans) and so much more</p>
                     </div>
-                    <Button type="submit" className='w-full sm:w-auto p-3 mt-10 bg-white' style={{ background: 'white', color: '#065373' }} onClick={() => window.location.href ="https://arvofinance.page.link/download-app"}>Download the App</Button>
+                    <Button type="submit" className='w-full sm:w-auto p-3 mt-10 bg-white' style={{ background: 'white', color: '#065373' }} onClick={() => window.location.href ="https://arvofinance.page.link/download-app"} title="Check the App" />
                 </div>
                 <div className="self-center scale-75 order-1 flex flex-col items-center">
                     <img src={GetStartIcon} alt="star" />

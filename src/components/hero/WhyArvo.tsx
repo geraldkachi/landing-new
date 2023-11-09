@@ -28,9 +28,9 @@ const WhyArvo = ({ whyavro }: WhtAvroProps) => {
       <div className=' max-w-7xl mx-auto mt-10 py-10'>
 
         <div className="my-5 text-center">
-          <h1 className='text-[#141C1F] text-[40px] my-5'>Why Arvo?</h1>
+          <h1 className='text-[#141C1F] text-[40px] my-5'>Why Arvo Payroll?</h1>
           {/* <p>Get instant loans without collateral and delays, create wealth with our<br /> peer-to-peer platform on arvo</p> */}
-          <p>Create and manage your wealth with<br />  platform on Arvo</p>
+          <p>Efficiently make payments with Arvo Payroll</p>
         </div>
 
         {/* a better approach */}
@@ -38,22 +38,22 @@ const WhyArvo = ({ whyavro }: WhtAvroProps) => {
           <div className="text-left self-center flex gap-6  flex-col my-4 ml-4 border-l-4 border-[#F1F3FF] text-[#949AB1] relative">
             <div className={"flex items-center tabIndex pl-5 mb-5  my-1 hover:border-l-4 hover:border-[#02C39A] cursor-pointer hover:text-[#02C39A]" + (tabIndex === 0 && "tabIndex text-[#02C39A] border-l-4 h-20 border-b-[#02C39A]")}>
               <div>
-                <p className={`font-bold text-[#141C1F] ${tabIndex === 0 && " text-[#02C39A] "}`}>Quick Loan Disbursement</p>
-                <p className={` ${tabIndex === 0 && " text-[#668A99] "}`}>Quick and secured loans guaranteed instantly</p>
+                <p className={`font-bold text-[#141C1F] ${tabIndex === 0 && " text-[#02C39A] "}`}>Precision Payroll</p>
+                <p className={` ${tabIndex === 0 && " text-[#668A99] "}`}>Experience accurate payroll processing tailored to African business intricacies. Arvo ensures every cent is accounted for, ensuring seamless salary disbursements.</p>
               </div>
             </div>
 
             <div className={"flex items-center tabIndex pl-5 mb-5  my-1 hover:border-l-4 hover:border-[#065373] cursor-pointer hover:text-[#065373]" + (tabIndex === 1 && " text-[#065373] border-l-4 border-b-[#065373]")}>
               <div>
-                <p className={`font-bold text-[#141C1F] ${tabIndex === 1 && " text-[#065373 ]"}`}>Affordable Bills Payment</p>
-                <p className={`${tabIndex === 1 && " text-[#668A99] "}`}>A dedicated channel for airtime vending/topup at appropriate pricing, Bills Payment (Utilities & bills) at discounted rates.</p>
+                <p className={`font-bold text-[#141C1F] ${tabIndex === 1 && " text-[#065373 ]"}`}>Localized Expertise</p>
+                <p className={`${tabIndex === 1 && " text-[#668A99] "}`}> Benefit from our in-depth understanding of African tax codes and employment regulations. We navigate the complex landscape, ensuring your company stays compliant effortlessly.</p>
               </div>
             </div>
 
             <div className={"flex items-center tabIndex pl-5 mb-5  my-1 hover:border-l-4 hover:border-[#2E63EA] cursor-pointer hover:text-[#2E63EA]" + (tabIndex === 2 && " text-[#2E63EA] border-l-4 border-b-[#2E63EA]")}>
               <div>
-                <p className={`font-bold text-[#141C1F] ${tabIndex === 2 && " text-[#2E63EA] "}`}>Arvo Payment</p>
-                <p className={`${tabIndex === 2 && " text-[#668A99] "}`}>Experience a new era of payment solutions with Arvo Pay and POS services.</p>
+                <p className={`font-bold text-[#141C1F] ${tabIndex === 2 && " text-[#2E63EA] "}`}>Time-Efficient Management</p>
+                <p className={`${tabIndex === 2 && " text-[#668A99] "}`}>  Arvo streamlines payroll tasks, liberating your team from administrative hassles. Spend less time on paperwork and more on what truly matters – growing your business.</p>
               </div>
             </div>
           </div>

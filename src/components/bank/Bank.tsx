@@ -20,10 +20,9 @@ const Bank = ({ product }: BankProps) => {
 
 
                 <div className="text-base text-left self-center justify-items-center py-5">
-                    <h1 className="text-[#065373] font-bold text-4xl md:text-[56px] md:pb-5">Bank in Style</h1>
+                    <h1 className="text-[#065373] font-bold text-4xl md:text-[56px] md:pb-5 leading">Customized Payroll </h1>
                     <p className="my-5">
-                        Affords you the luxury of access to financial services and payments outside the brick-and-mortar approach of a traditional banking system.<br className="mt-4" /> <span className="pt-4 my-4"> With just your smart phone, you bank-on-the-go and your funds are just within your fingertips.</span>
-                    </p>
+                    Tailor your payroll structure to match your company policies. Define allowances, deductions, and benefits with ease. Aggro accommodates a variety of payment frequencies, ensuring flexibility for your unique requirements.                    </p>
 
                     {/* <div className="flex items-center rounded-lg gap-5 text-white mt-9">
                         <img className="cursor-pointer" src={BlackGoogleIcon} alt="BlackGoogleIcon" onClick={() => window.location.href = 'https://arvofinance.page.link/download-app'} />

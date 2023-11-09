@@ -16,30 +16,23 @@ const Progress = () => {
                         <div className="my-5">
                             <h3 className="text-[#02C39A] text-3xl md:text-[40px]">5+</h3>
                             <p className="text-">Years 5+</p>
-                            {/* <p className="text-">Years in the industry</p> */}
                         </div>
 
                         <div className="my-5">
                             <h3 className="text-[#02C39A] text-3xl md:text-[40px]">1,500,000+</h3>
-                            <p className="text-">Trusted Customers</p>
+                            <p className="text-">Trusted Companies</p>
                         </div>
 
                         <div className="my-5">
                             <h3 className="text-[#02C39A] text-3xl md:text-[40px]">2,000,000</h3>
                             <p className="text-">Executed Transactions</p>
                         </div>
-                        {/* <div className="my-5 order-">
-                            <h3 className="text-[#02C39A] text-3xl md:text-[40px]">20,000+</h3>
-                            <p className="text-">Dispensed Loans / day</p>
-                        </div> */}
+                    
                         <div className="my-5">
-                            <h3 className="text-[#02C39A] text-3xl md:text-[40px]">20,000+</h3>
-                            <p className="text-">Loans disbursed till date</p>
+                            <h3 className="text-[#02C39A] text-3xl md:text-[40px]">50+</h3>
+                            <p className="text-">Companies</p>
                         </div>
-                        <div className="my-5">
-                            <h3 className="text-[#02C39A] text-3xl md:text-[40px]">1,000,000</h3>
-                            <p className="text-">Pin Disbursed</p>
-                        </div>
+                   
                     </div>
                     <div className="grid md:grid-cols-2 grid-cols-2 gao-10 place-items center">
                     </div>

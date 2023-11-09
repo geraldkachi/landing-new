@@ -46,7 +46,7 @@ const Home: FC = () => {
         <Bank {...{ product }} />
         {/* <MakeCardless /> */}
       </div>
-      <StartedAvro />
+      {/* <StartedAvro />s */}
       {/* <OurCustomer {...{ faqs }} /> */}
       <FormDetails {...{ contact }} />
       <GetUpdates />

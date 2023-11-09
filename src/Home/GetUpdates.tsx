@@ -13,8 +13,8 @@ const GetUpdates = () => {
             </p>
           </div>
           <form action="" className='flex justify-center items-center"'>
-            <div className="flex-wrap flex justify-center items-center">
-              <div className="md:mb-6">
+            <div className="flex-wrap flex justify-center items-center gap-4">
+              <div className="mb-6 md:mb-0">
                 <Input
                   type="email"
                   className="
@@ -27,7 +27,6 @@ const GetUpdates = () => {
                                     text-sm
                                     rounded-lg
                                     font-normal
-                                    text-gray-700
                                     transition
                                     ease-in-out
                                     m-0
@@ -36,12 +35,11 @@ const GetUpdates = () => {
                 />
               </div>
 
-              <div className="md:mr-auto md:mb-6">
+              <div className="md:mr-auto mb-6 md:mb-0">
                 <Button
                   type="submit"
-                  className="inline-block rounded-lg px-6 py-3 border-2 border-white text-white font-medium text-xs leading-tight uppercase hover:bg-[ #065373] hover:bg-opacity-1 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
-                  Submit
-                </Button>
+                  className="inline-block rounded-lg px-6 py-3 border-2 border-white text-white font-medium text-xs leading-tight uppercase hover:bg-[ #065373] hover:bg-opacity-1 focus:outline-none focus:ring-0 transition duration-150 ease-in-out" title="Submit" />
+                  
               </div>
             </div>
           </form>

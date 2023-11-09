@@ -14,16 +14,11 @@ const Paywith = () => {
                 </div>
                 <div className="text-base text-left self-center justify-items-center py-5 text-[#141C1F]">
                     <div className="">
-                        <h1 className="font-bold text-3xl md:text-[32px]">Explore Arvo Pay & POS Services</h1>
-                        <p className="my-5">
-                            Be a part of the solution by signing up for an Arvo POS to enable you to take charge of your financial freedom
-                        </p>
-                        <p>
-                            Experience the ease of simplified bulk payments through our smart solution. With our innovative tool, you can easily send money to multiple users at the same time. No need to deal with the complications of doing each transaction separately.
-                        </p>
-
+                        <h1 className="font-bold text-3xl md:text-[32px]">Automate Employee Data</h1>
+                        <p className="my-5"> Connect Aggro with your attendance and time-tracking systems. Employee hours and leave balances are automatically synced, eliminating manual data entry. Say goodbye to spreadsheet chaos!</p>
+                      
                         {/* <button onClick={() => navigate('register')} className="bg-black p-5 px-12 rounded-xl text-white mb-5">SIgn Up</button> */}
-                        <button onClick={() => navigate('/register')} className="bg-[#065373] p-3 px-12 rounded-xl text-white mt-5">Sign Up for POS merchants</button>
+                        {/* <button onClick={() => navigate('/register')} className="bg-[#065373] p-3 px-12 rounded-xl text-white mt-5">Sign Up for POS merchants</button> */}
 
                     </div>
                 </div>

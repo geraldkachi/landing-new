@@ -207,7 +207,7 @@ export default function Input(
 	};
 
 	return (
-		<div className={`bg-  mb-4 ${className}`}>
+		<div className={`bg- ${className}`}>
 			{label && (
 				<label
 					className="my-1 text-[#0D1227] leading-[19.6px] flex items-center text-left text-sm font-semibold"
@@ -226,7 +226,7 @@ export default function Input(
 				</label>
 			)}
 			<div
-                className={`bg-white flex items-center w-full rounded-[4px] overflow-hidden border border-[#E2E4E8]focus-within:border-bluetiful disabled:bg-grey read-only:bg-grey ${inputClassName}
+                className={`bg-white flex items-center w-full rounded-[4px] overflow-hidden border border-[#E2E4E8] focus-within:border-bluetiful disabled:bg-grey read-only:bg-grey ${inputClassName}
                 border-${col()}
                 ${
 					(disabled || readOnly) && 'bg-grey border-none'

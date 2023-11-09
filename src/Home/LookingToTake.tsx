@@ -10,22 +10,22 @@ const LookingToTake = () => {
         <div className="bg-[#043144] px-5 pt-20 pb-10 text-white">
             <div className="text-center max-w-5xl mx-auto">
                 {/* <h1 className='text-bold md:text-4xl text-3xl mb-4'>Looking to take charge of your Finances</h1> */}
-                <h1 className='text-bold md:text-4xl text-3xl mb-4'>Arvo Loan</h1>
-                <p className="text-base md:text-lg">With the Arvo App, users can access loans of up to ₦1,000,000 with competitive interest rates and flexible repayment plans.
+                <h1 className='text-bold md:text-4xl text-3xl mb-4'>Arvo Payroll</h1>
+                <p className="text-base md:text-lg">With the Arvo Payroll System, Companies easily Disburse salary to employees.
                 </p>
             </div>
             <div className="max-w-[1300px] my-10 grid lg:grid-cols-2 place-items-center  mx-auto">
                 <div className='justify-selt-center md:justify-self-start  text-start'>
                     <div className="mb-8">
-                        <h1 className='font-bold text-lg md:text-3xl'>Fastcash Loan</h1>
-                        <p className='text-base text-[#FDFFFC]'>Apply to receive funds instantly into your arvo wallet</p>
+                        <h1 className='font-bold text-lg md:text-3xl'>Real-Time Insights</h1>
+                        <p className='text-base text-[#FDFFFC]'>Gain actionable insights into your payroll data.</p>
                     </div>
 
                     <div className='flex items-center gap-4 text-[#FDFFFC]'>
                         <div>
                             <div className='pb-5'>
                                 <img className='inline-flex' src={Check} alt="checkicon" /> &nbsp;
-                                <p className='inline sm:inline-flex text-sm sm:text-base mb-3'>Competitive Interest Rate</p>
+                                <p className='inline sm:inline-flex text-sm sm:text-base mb-3'>Customer-Centric Support:</p>
                             </div>
                             <div className='pb-5'>
                                 <img className='inline-flex' src={Check} alt="checkicon" /> &nbsp;
@@ -33,26 +33,26 @@ const LookingToTake = () => {
                             </div>
                             <div className='pb-5'>
                                 <img className='inline-flex' src={Check} alt="checkicon" /> &nbsp;
-                                <p className='inline sm:inline-flex text-sm sm:text-base mb-3'>Flexible Repayment Plan</p>
+                                <p className='inline sm:inline-flex text-sm sm:text-base mb-3'>Scalability and Flexibility</p>
                             </div>
                         </div>
                         <div>
                             <div className='pb-5'>
                                 <img className='inline-flex' src={Check} alt="checkicon" /> &nbsp;
-                                <p className='inline sm:inline-flex text-sm sm:text-base mb-3'>Tenure of 7-90 days</p>
+                                <p className='inline sm:inline-flex text-sm sm:text-base mb-3'>Enhanced Security</p>
                             </div>
                             <div className='pb-5'>
                                 <img className='inline-flex' src={Check} alt="checkicon" /> &nbsp;
-                                <p className='inline sm:inline-flex text-sm sm:text-base mb-3'>No Collateral </p>
+                                <p className='inline sm:inline-flex text-sm sm:text-base mb-3'>Cost-Effectiveness </p>
                             </div>
                             <div className='pb-5'>
                                 <img className='inline-flex' src={Check} alt="checkicon" /> &nbsp;
-                                <p className='inline sm:inline-flex text-sm sm:text-base mb-3'>Higher amount</p>
+                                <p className='inline sm:inline-flex text-sm sm:text-base mb-3'>Seamless Integration</p>
                             </div>
                         </div>
                     </div>
 
-                    <Button type="submit" className=' md:w-auto px-16 p-3 mt-5 bg-white' style={{ background: 'white', color: '#065373' }} onClick={() => navigate('fast-cash')} >Learn more</Button>
+                    <Button type="submit" className=' md:w-auto px-16 p-3 mt-5 bg-white' style={{ background: 'white', color: '#065373' }} onClick={() => navigate('fast-cash')} title="Learn More" />
                 </div>
                 <div className='self-center scale-95 overflow-hidden'>
                     <img className='' src={LookingToTakeIcon} alt="lookingtotake" />
