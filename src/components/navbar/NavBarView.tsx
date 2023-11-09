@@ -79,7 +79,7 @@ const Navbar = ({ whyavro, scrollToSection, contact, product, faqs, nav, setNav 
         </div>
 
 
-        <ClickOutside onclickoutside={() => setNav(true)} className={(!nav && (width <= 1024)) ? 'fixed left-0 top-0 w-full border-r border-r-gray-300 bg-[#fff] ease-in-out duration-500 shadow-lg z-50' : 'ease-in-out duration-500 fixed left-[-100%]'}>
+        <ClickOutside onclickoutside={() => setNav(true)} className={(!nav && (width <= 1024)) ? 'fixed left-0 top-0 w-full border-r border-r-gray-300 bg-[#fff] ease-in-out duration-500 shadow-lg z-50' : 'ease-in-out duration-500 fixed top-[-100%]'}>
           <div className='flex flex-col justify-center items-center w-full p-6'>
             <h1 className='w-full text-3xl font-bold text-[#00df9a] m-4'>
               {/* <ArvoIcon /> */}
