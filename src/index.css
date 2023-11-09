@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fund-button {
+  background-color: transparent;
+  color: black;
+  border: 1px solid #c2d0d6;
+  float: left;
+}
+.fund-button:hover {
+  background-color: #f0fafe;
+  color: black;
+}
+.btn {
+  background-color: black;
+}
+.small-card {
+  width: 213px;
+}
+.long-card1 {
+  width: 780px;
+}
+/* .section-width{
+  width: 100%;
+} */
+@media screen and (max-width: 1024px) {
+  .hidelogin {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .hideOnlyonNavMobile {
+    display: block;
+  }
+}
+.card {
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+  border-radius: 15px;
+}
+
+.selfie {
+  display: flex;
+  justify-content: center;
+}
+
+.cam,
+.preview {
+  position: relative;
+}
+
+.preview-img {
+  display: block;
+}
+
+.capture-btn {
+  position: absolute;
+  bottom: 9px;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+  background: none;
+  color: #fff;
+  border: none;
+  font-size: 40px;
+}
+
+.video-player {
+  display: block;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.back-btn,
+.download-btn {
+  background: none;
+  color: #fff;
+  border: none;
+  font-size: 40px;
+}
+
+.download-btn {
+  margin-left: 25px;
+}
+
+.chek input[type='checkbox'] {
+  display: flex;
+  width: 1.55em;
+  height: 1.55em;
+  appearance: none;
+  border-radius: 2px;
+  align-items: center;
+  background: white;
+  justify-content: center;
+  border: 1px solid #c2d0d6;
+}
+.chek input[type='checkbox']:hover {
+  border: 1px solid #065373;
+}
+.chek input[type='checkbox']:checked {
+  position: relative;
+  border: 1px solid #065373;
+}
+.chek input[type='checkbox']:checked::after {
+  /* width: 4px; */
+
+  content: '■';
+  font-size: 29px;
+  color: #065373;
+  position: absolute;
+}
+
+
+@keyframes expand {
+  /* 0% {
+    transform: scale(.6);
+  }
+  75%, 100% {
+      transform: scale(1);
+  } */
+  0% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+50% {
+    -webkit-transform: scale3d(1.05,1.05,1.05);
+    transform: scale3d(1.05,1.05,1.05);
+}
+100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+}
+.animated-bounce {
+  animation: expand 4s  infinite;
+}
