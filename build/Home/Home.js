@@ -1,0 +1,28 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { useRef, useState } from 'react';
+import ZeroExtra from './ZeroExtra';
+import GetUpdates from './GetUpdates';
+// import OurCustomer from './OurCustomer';
+// import StartedAvro from './StartedAvro';
+// import MakeCardless from './MakeCardless';
+import LookingToTake from './LookingToTake';
+import Hero from '../components/hero/Hero';
+import Bank from '../components/bank/Bank';
+import Footer from '../components/footer/Footer';
+import WhyArvo from '../components/hero/WhyArvo';
+import Navbar from '../components/navbar/NavBarView';
+import Paywith from '../components/paywith/Paywith';
+import Progress from '../components/progress/Progress';
+import FormDetails from '../components/formdetail/FormDetails';
+import ScrollToTop from '../components/scrollToTop/ScrollToTop';
+import ScrollIcon from '../components/scrollToTop/scrollicon.svg';
+import { scrollToSection } from '../util/utils';
+const Home = () => {
+    const [nav, setNav] = useState(true);
+    const whyavro = useRef();
+    const contact = useRef();
+    const product = useRef();
+    const faqs = useRef();
+    return (_jsxs("section", { className: "", children: [_jsx(Navbar, { faqs, whyavro, contact, product, nav, setNav, scrollToSection }), _jsx(Hero, {}), _jsx(Progress, {}), _jsx(WhyArvo, { whyavro }), _jsxs("div", { className: "bg-[#F0FAFE]", children: [_jsx(LookingToTake, {}), _jsx(ZeroExtra, {}), _jsx(Paywith, {}), _jsx(Bank, { product })] }), _jsx(FormDetails, { contact }), _jsx(GetUpdates, {}), _jsx(Footer, { whyavro, contact, scrollToSection }), _jsx(ScrollToTop, { className: "flex items-center justify-center", children: _jsx("img", { src: ScrollIcon, alt: "ScrollIcon" }) })] }));
+};
+export default Home;
