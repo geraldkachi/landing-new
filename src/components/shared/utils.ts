@@ -1,4 +1,4 @@
-export const moneyFormmater = (value) => {
+export const moneyFormmater = (value: any) => {
   const number = value;
   const formatter = new Intl.NumberFormat('en-NG', {
     style: 'currency',

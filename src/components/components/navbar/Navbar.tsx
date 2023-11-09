@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { ClickOutside } from '../../hooks/useClickOutside';
-import useWindowDimensions from '../../hooks/useWindowDimensions';
+
+import useWindowDimensions from '../../../hooks/useWindowDimensions';
+import { ClickOutside } from '../../ClickOutside/ClickOutside';
 
 const Navbar = () => {
     const navigate = useNavigate()

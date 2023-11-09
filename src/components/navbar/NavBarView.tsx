@@ -9,16 +9,16 @@ import useWindowDimensions from '../../hooks/useWindowDimensions';
 
 
 interface NavBarProps {
-  whyavro?: RefObject<HTMLDivElement>
-  scrollToSection: (n: RefObject<HTMLDivElement>) => void,
-  contact: RefObject<HTMLDivElement>
-  product?: RefObject<HTMLDivElement>
-  faqs?: RefObject<HTMLDivElement>
+  whyavro: RefObject<HTMLDivElement> | any
+  scrollToSection: (n: RefObject<HTMLDivElement> | any) => void,
+  contact: RefObject<HTMLDivElement> | any
+  product: RefObject<HTMLDivElement> | any
+  faqs: RefObject<HTMLDivElement> | any
   nav: boolean
   setNav: Dispatch<SetStateAction<boolean>>
 }
 
-const Navbar = ({ whyavro, scrollToSection, contact, product, faqs, nav, setNav }: NavBarProps) => {
+const Navbar = ({ whyavro, scrollToSection, contact, nav, setNav }: NavBarProps) => {
   const [productOpen, setProductOpen] = useState(false)
   const navigate = useNavigate()
   const { width } = useWindowDimensions()

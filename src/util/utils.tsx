@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-inferrable-types */
 /* eslint-disable no-var */
-import { AES, enc } from 'crypto-js';
+// import { AES, enc } from 'cryptso-js';
 // import {
 //   AIcardposoutlin,
 //   AIwallet1Outlin,
@@ -15,7 +15,7 @@ import { AES, enc } from 'crypto-js';
 // import Remita from '../assets/loan/remitaloan.svg';
 import { format } from 'date-fns';
 
-export const stripNumber = (val) => {
+export const stripNumber = (val: any) => {
   let no = val;
   if (val?.includes('+234')) {
     const temp = val?.split('+234');
@@ -28,15 +28,15 @@ export const stripNumber = (val) => {
   return no;
 };
 
-export function UpperCaseFirst(str) {
+export function UpperCaseFirst(str: any) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-export function LowerCaseFirst(str) {
+export function LowerCaseFirst(str: any) {
   return str.charAt(0).toLowerCase() + str.slice(1);
 }
 
-export function FormatNumber(numb, fixed) {
+export function FormatNumber(numb: any, fixed: any) {
   if(!numb) return '0.00'
   const num = Number(numb);
 
@@ -54,15 +54,15 @@ export function FormatNumber(numb, fixed) {
   return array.join('');
 }
 
-export const moneyFormmater = (value: number) => {
-  const formatter = new Intl.NumberFormat('en-NG', {
-    style: 'currency',
-    currency: 'NGN',
-    minimumFractionDigits: 0
-  });
-  const formattedNumber = formatter.format(value); // "₦1,234,567"
-  return formattedNumber;
-};
+// export const moneyFormmater = (value: number) => {
+//   const formatter = new Intl.NumberFormat('en-NG', {
+//     style: 'currency',
+//     currency: 'NGN',
+//     minimumFractionDigits: 0
+//   });
+//   const formattedNumber = formatter.format(value); // "₦1,234,567"
+//   return formattedNumber;
+// };
 
 export const nextRepaymentDay = (amount: string, interest: string, tenor: number) => {
   const part = Number(tenor) <= 30 ? 1 : Number(tenor) / 30;
@@ -96,15 +96,15 @@ export const loanPurposes = [
   'Others',
 ];
 
-export const encryptData = (message: string) => {
-  const encrypts = AES.encrypt(message, import.meta.env.VITE_ENCRYPTION_KEY).toString();
-  return encrypts;
-};
+// export const encryptData = (message: string) => {
+//   const encrypts = AES.encrypt(message, import.meta.env.VITE_ENCRYPTION_KEY).toString();
+//   return encrypts;
+// };
 
-export const decryptData = (message: string) => {
-  const decrypts = AES.decrypt(message, import.meta.env.VITE_ENCRYPTION_KEY).toString(enc.Utf8);
-  return decrypts;
-};
+// export const decryptData = (message: string) => {
+//   const decrypts = AES.decrypt(message, import.meta.env.VITE_ENCRYPTION_KEY).toString(enc.Utf8);
+//   return decrypts;
+// };
 
 // export const loanRoutes = {
 //   fastcash: '/dashboard/fastcash-loan',
@@ -209,26 +209,26 @@ export const calculateRepaymentAmount =(
   return result;
 }
 
-export const composeRepaymentPlan = (tenure: number, totalRepayment: number) => {
-  const plans = [];
-  if (tenure <= 30) {
-    plans.push({ label: `1 Month  - ${moneyFormmater(totalRepayment)}`, value: `${totalRepayment}` });
-  }
+// export const composeRepaymentPlan = (tenure: number, totalRepayment: number) => {
+//   const plans = [];
+//   if (tenure <= 30) {
+//     plans.push({ label: `1 Month  - ${moneyFormmater(totalRepayment)}`, value: `${totalRepayment}` });
+//   }
 
-  if (tenure > 30)  {
-  const part = Number(tenure) <= 30 ? 1 : Number(tenure) / 30;
-    const repaymentPerMonth = totalRepayment / part
-    for (let x = 0; x < convertDaysToMonths(tenure); x++) {
-      const month = x + 1;
-      plans.push({
-        label: `${month} Month${month === 1 ? '' : '(s)'}  - ${moneyFormmater(repaymentPerMonth)}`,
-        value: `${repaymentPerMonth}`
-      });
-    }
-  }
+//   if (tenure > 30)  {
+//   const part = Number(tenure) <= 30 ? 1 : Number(tenure) / 30;
+//     const repaymentPerMonth = totalRepayment / part
+//     for (let x = 0; x < convertDaysToMonths(tenure); x++) {
+//       const month = x + 1;
+//       plans.push({
+//         label: `${month} Month${month === 1 ? '' : '(s)'}  - ${moneyFormmater(repaymentPerMonth)}`,
+//         value: `${repaymentPerMonth}`
+//       });
+//     }
+//   }
 
-  return plans;
-};
+//   return plans;
+// };
 
 export const formatDate = (date: string, formater?: string) => {
   return date && format(new Date(date), formater || 'yyyy-MM-dd');
@@ -241,7 +241,7 @@ export const convertCurrency = new Intl.NumberFormat("en-US", {
   minimumFractionDigits: 0,
 });
 
-export const scrollToSection = (elementRef) => {
+export const scrollToSection = (elementRef: any) => {
   window.scrollTo({
     top: elementRef.current.offsetTop,
     behavior: 'smooth'

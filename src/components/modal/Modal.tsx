@@ -1,4 +1,4 @@
-import { AIclosecirclebol } from 'arvara-icons';
+// import { AIclosecirclebol } from 'arvara-icons';
 
 interface Props {
   type?: string
@@ -19,10 +19,11 @@ const Modal = (props: Props) => {
           <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
             <div className="relative my-6 mx-auto">
               <div className="border-0 rounded-3xl shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-                <AIclosecirclebol
+                {/* <AIclosecirclebol
                   className="icon solid text-grey-slate cursor-pointer float-right m-4 absolute top-0 right-0"
                   onClick={() => closeModal(false)}
-                />
+                /> */}
+                <div  onClick={() => closeModal(false)}></div>
                 {type === "icon" && (
                   <div className="flex items-center justify-center m-auto mt-10  rounded-full">
                     {icon}

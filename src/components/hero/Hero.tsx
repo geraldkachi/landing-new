@@ -1,10 +1,12 @@
 import YellowHero from '../../assets/home/YelloHero'
-import LandingPhone from '../../images/login/nmn.svg'
+// import LandingPhone from '../../images/login/nmn.svg'
+import LandingPhone from '/africa.svg'
 import GooglePlayHome from "./GooglePlayHome.svg"
 import AppleStoreHome from "./AppleStoreHome.svg"
-import { Link, useNavigate } from 'react-router-dom'
-
-import { Rotate, Fade, LightSpeed, } from "react-reveal"
+import {  useNavigate } from 'react-router-dom'
+//@ts-ignore
+import { Rotate, Fade, LightSpeed } from "react-reveal"
+//@ts-ignore
 import Jump from "react-reveal"
 
 const Hero = () => {
@@ -55,7 +57,7 @@ const Hero = () => {
                     <Jump bottom>
                         {/* <LandingPhone /> */}
                         <a href=""></a>
-                        <img src={LandingPhone} alt="LandingPhone" />
+                        <img src={LandingPhone} alt="LandingPhone" className='md:h-[400px] my-10' />
                     </Jump>
                 </div>
             </div>

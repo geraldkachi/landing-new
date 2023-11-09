@@ -1,8 +1,6 @@
-import { useNavigate } from "react-router-dom"
 import PayWithIcon from "./paywithicon.svg"
 
 const Paywith = () => {
-    const navigate = useNavigate()
 
     return (
         <section className="overflow-x-hidden px-5 py-10">

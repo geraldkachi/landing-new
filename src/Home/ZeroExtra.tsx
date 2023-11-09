@@ -1,7 +1,7 @@
-import { Button } from "arvara-pckage"
 import PayWithIconz from "./zeroextra.svg"
-import BlackAppPlay from "../../assets/auths/BlackAppPlay.svg"
-import BlackGoogleIcon from "../../assets/auths/BlackGoogleIcon.svg"
+// import BlackAppPlay from "../../assets/auths/BlackAppPlay.svg"
+// import BlackGoogleIcon from "../../assets/auths/BlackGoogleIcon.svg"
+// import { Button } from "../components/components"
 
 const ZeroExtra = () => {
     return (

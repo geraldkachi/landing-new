@@ -1,4 +1,4 @@
-import { AIeyebol, AIeyeslashbol } from "arvara-icons";
+// import { AIeyebol, AIeyeslashbol } from "";
 interface Props {
   showPassword: boolean;
   setShowPassword: (password: boolean) => void;
@@ -8,9 +8,11 @@ const PasswordMe = (props: Props) => {
   return (
     <div onClick={() => setShowPassword(!showPassword)}>
       {showPassword ? (
-        <AIeyebol className="icon solid text-blue-2" />
+        // <AIeyebol className="icon solid text-blue-2" />
+        ''
         ) : (
-        <AIeyeslashbol className="icon solid text-blue-2" />
+        // <AIeyeslashbol className="icon solid text-blue-2" />
+        ''
       )}
     </div>
   );

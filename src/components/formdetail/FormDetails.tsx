@@ -1,4 +1,4 @@
-import { RefObject, useState } from "react";
+import { RefObject } from "react";
 // import { Input, Button, Card } from "arvara-pckage";
 
 
@@ -7,50 +7,49 @@ import { RefObject, useState } from "react";
 // import TwitterIcon from '../../assets/home/Twitter.svg'
 // import LinkedinIcon from '../../assets/home/Linkedin.svg'
 
-import { Link } from "react-router-dom";
 import AddressIcon from "./AddressIcon";
 import CallIcon from "./CallIcon";
 import SmsIcon from "./SmsIcon";
 import SocialIcon from "./SocialIcon";
 
-const initalValues = {
-    firstName: '',
-    lastName: '',
-    email: '',
-    password: '',
-    phoneNumber: '',
-}
+// const initalValues = {
+//     firstName: '',
+//     lastName: '',
+//     email: '',
+//     password: '',
+//     phoneNumber: '',
+// }
 
 interface ContactProps {
-    contact: RefObject<HTMLDivElement>;
+    contact: RefObject<HTMLDivElement> | any
 }
 
 const FormDetails = ({ contact }: ContactProps) => {
 
-    const [formValue, setFormValue] = useState(initalValues)
+    // const [formValue, setFormValue] = useState(initalValues)
 
-    const {
-        firstName,
-        lastName,
-        email,
-        password,
-        phoneNumber,
-    } = formValue
+    // const {
+    //     firstName,
+    //     lastName,
+    //     email,
+    //     password,
+    //     phoneNumber,
+    // } = formValue
 
-    const onFinish = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        const values = {
-            firstName,
-            lastName,
-            email,
-            password,
-            phoneNumber,
-        }
-    }
+    // const onFinish = (e: React.FormEvent<HTMLFormElement>) => {
+    //     e.preventDefault();
+    //     const values = {
+    //         firstName,
+    //         lastName,
+    //         email,
+    //         password,
+    //         phoneNumber,
+    //     }
+    // }
 
-    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setFormValue({ ...formValue, [event.target.name]: (event.target as HTMLInputElement).value })
-    }
+    // const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    //     setFormValue({ ...formValue, [event.target.name]: (event.target as HTMLInputElement).value })
+    // }
 
     return (
         <div ref={contact} className="bg-[#F6F8F9] text-[#141C1F] px-5 py-10">

@@ -8,8 +8,9 @@
 
 import Googel from './googleproduct.svg'
 import Apple from './applestoreproduct.svg'
-import { Button, Input } from 'arvara-pckage'
+
 import ThreesPhone from './threePhonefedfast.svg'
+import { Button, Input } from '../components/components'
 
 const ProductOnFedpay = () => {
     return (
@@ -74,9 +75,8 @@ const ProductOnFedpay = () => {
                                 <div className="md:mr-auto md:mb-6">
                                     <Button
                                         type="submit"
-                                        className="w-full md:w-[unset] inline-block rounded-lg px-6 py-3 border-2 border-white text-white font-medium text-xs leading-tight uppercase hover:bg-[ #065373] hover:bg-opacity-1 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
-                                        Submit
-                                    </Button>
+                                        className="w-full md:w-[unset] inline-block rounded-lg px-6 py-3 border-2 border-white text-white font-medium text-xs leading-tight uppercase hover:bg-[ #065373] hover:bg-opacity-1 focus:outline-none focus:ring-0 transition duration-150 ease-in-out" title="Submit" />
+                                        
                                 </div>
                             </div>
                         </form>

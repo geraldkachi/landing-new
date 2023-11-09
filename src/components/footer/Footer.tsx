@@ -1,16 +1,16 @@
 import { Link } from "react-router-dom"
 // import ArvoIcon from "../../images/svg/ArvoIcon"
-import FacebookIcon from '../../assets/home/Facebook.svg'
-import InstagramIcon from '../../assets/home/Instagram.svg'
-import TwitterIcon from '../../assets/home/Twitter.svg'
-import LinkedinIcon from '../../assets/home/Linkedin.svg'
-import Googleplay from "./googleplay.svg"
-import AppStore from "./AppStore.svg"
+// import FacebookIcon from '../../assets/home/Facebook.svg'
+// import InstagramIcon from '../../assets/home/Instagram.svg'
+// import TwitterIcon from '../../assets/home/Twitter.svg'
+// import LinkedinIcon from '../../assets/home/Linkedin.svg'
+// import Googleplay from "./googleplay.svg"
+// import AppStore from "./AppStore.svg"
 import { RefObject } from "react"
 interface Props {
-    whyavro: RefObject<HTMLDivElement>
+    whyavro: RefObject<HTMLDivElement> | any
     scrollToSection: (n: RefObject<HTMLDivElement>) => void,
-    contact: RefObject<HTMLDivElement>
+    contact: RefObject<HTMLDivElement> | any
 }
 const Footer = ({ whyavro, scrollToSection, contact, }: Props) => {
     return (

@@ -1,14 +1,15 @@
 import { RefObject } from "react";
+//@ts-ignore
 import { Fade } from "react-reveal";
 
 import BankIconSvg from "./bankicon.svg";
-import BlackAppPlay from "../../assets/auths/BlackAppPlay.svg";
-import BlackGoogleIcon from "../../assets/auths/BlackGoogleIcon.svg";
+// import BlackAppPlay from "../../assets/auths/BlackAppPlay.svg";
+// import BlackGoogleIcon from "../../assets/auths/BlackGoogleIcon.svg";
 
 
 
 interface BankProps {
-    product: RefObject<HTMLDivElement>;
+    product: RefObject<HTMLDivElement> | any
 }
 
 const Bank = ({ product }: BankProps) => {

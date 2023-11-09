@@ -1,7 +1,7 @@
 
 import IMG from './startavro.svg'
 import GetStartIcon from './getstarted.svg'
-import StartedAvroIcons from '../../assets/home/StartAvroIcon';
+// import StartedAvroIcons from '../../assets/home/StartAvroIcon';
 
 import GooglePlayHome from "./GooglePlayHome.svg"
 import AppleStoreHome from "./AppleStoreHome.svg"

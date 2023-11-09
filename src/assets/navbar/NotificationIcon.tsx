@@ -7,7 +7,6 @@
 // }
 
 // export default NotificationIcon
-import * as React from "react"
 import { SVGProps } from "react"
 
 const NotificationIcon = (props: SVGProps<SVGSVGElement>) => (

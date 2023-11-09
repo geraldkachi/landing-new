@@ -1,13 +1,13 @@
 import { RefObject, useEffect, useState } from 'react'
 // import GifMoney from "./money-5944_256.gif"
-import GifMoney from "./loop1.png"
+// import GifMoney from "./loop1.png"
 import CodeOne from "./code1.jpg"
 import CodeTwo from "./code2.jpg"
 import CodeThree from "./code3.jpg"
 
 // import AnimationGif from "./animation_lkl5nsdb_small.gif"
 interface WhtAvroProps {
-  whyavro: RefObject<HTMLDivElement>;
+  whyavro: RefObject<HTMLDivElement> | any
 }
 const WhyArvo = ({ whyavro }: WhtAvroProps) => {
   const arr = [1, 2, 3];

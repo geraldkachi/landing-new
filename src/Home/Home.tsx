@@ -2,8 +2,8 @@ import { FC, useRef, useState } from 'react';
 
 import ZeroExtra from './ZeroExtra';
 import GetUpdates from './GetUpdates';
-import OurCustomer from './OurCustomer';
-import StartedAvro from './StartedAvro';
+// import OurCustomer from './OurCustomer';
+// import StartedAvro from './StartedAvro';
 // import MakeCardless from './MakeCardless';
 import LookingToTake from './LookingToTake';
 
