@@ -12,7 +12,7 @@ const Progress = () => {
                 </>
 
                 < >
-                    <div className="grid md:grid-cols-5 grid-cols-2 gao-10 place-items center">
+                    <div className="grid md:grid-cols-4 grid-cols-2 gao-10 place-items center">
                         <div className="my-5">
                             <h3 className="text-[#02C39A] text-3xl md:text-[40px]">5+</h3>
                             <p className="text-">Years 5+</p>
