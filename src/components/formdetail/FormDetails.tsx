@@ -80,7 +80,7 @@ const FormDetails = ({ contact }: ContactProps) => {
                         </div>
 
                         <div>
-                            <div className="bg-[#2E63EA] p-3 rounded-full inline-flex">
+                            <div className="bg-[#2E63EA] p-3 rounded-full inline-flex"> 
                                 <SmsIcon />
                             </div>
                             <p className="font-semibold mb-5">Email</p>
