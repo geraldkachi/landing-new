@@ -38,7 +38,7 @@ const Footer = ({ whyavro, scrollToSection, contact, }: Props) => {
                     <Link to="#" onClick={() => scrollToSection(whyavro)}>Why Arvo?</Link>
                     {/* <Link to="#">Blog</Link> */}
                     <Link to="#" onClick={() => scrollToSection(contact)}>Contact Us</Link>
-                    <Link to="/terms-of-use" onClick={() => scrollToSection(whyavro)}>Terms ofUse</Link>
+                    <Link to="/terms-of-use" onClick={() => scrollToSection(whyavro)}>Terms of Use</Link>
                     <Link to="/terms-of-use" onClick={() => scrollToSection(whyavro)}>Privacy Policy</Link>
                 </div>
 
