@@ -1,9 +1,9 @@
 import { RefObject, useEffect, useState } from 'react'
 // import GifMoney from "./money-5944_256.gif"
-// import GifMoney from "./loop1.png"
-import CodeOne from "./code1.jpg"
-import CodeTwo from "./code2.jpg"
-import CodeThree from "./code3.jpg"
+import GifMoney from "./whyarvo.svg"
+// import CodeOne from "./code1.jpg"
+// import CodeTwo from "./code2.jpg"
+// import CodeThree from "./code3.jpg"
 
 // import AnimationGif from "./animation_lkl5nsdb_small.gif"
 interface WhtAvroProps {
@@ -29,7 +29,6 @@ const WhyArvo = ({ whyavro }: WhtAvroProps) => {
 
         <div className="my-5 text-center">
           <h1 className='text-[#141C1F] text-[40px] my-5'>Why Arvo Payroll?</h1>
-          {/* <p>Get instant loans without collateral and delays, create wealth with our<br /> peer-to-peer platform on arvo</p> */}
           <p>Efficiently make payments with Arvo Payroll</p>
         </div>
 
@@ -62,34 +61,19 @@ const WhyArvo = ({ whyavro }: WhtAvroProps) => {
             <div className='grid md:grid-cols-1- mt-20 sm:mt-0 h-auto'>
 
               {tabIndex === 0 && (<>
-                <div className='overflow-hidden h-full bg-contain'>
-                  <img src={CodeOne} alt="GifMoney" className="bg-[#02C39A] h-auto bg-contain self-stretch flex items-center justify-center sm:py-5 -my-10 md:my-0 w-full" />
+                <div className='overflow-hidden h-full bg-contain p-10'>
+                  <img src={GifMoney} alt="GifMoney" className="rounded-3xl  bg-contain self-stretch flex items-center justify-center sm:py-5  md:my-0 w-full" />
                 </div>
               </>)}
               {tabIndex === 1 && (<>
-                <div className='overflow-hidden h-full bg-contain'>
-                  <img src={CodeTwo} alt="GifMoney" className="bg-[#065373] h-auto bg-contain self-stretch flex items-center justify-center sm:py-5 -my-10 md:my-0 w-full" />
+                <div className='overflow-hidden h-full bg-contain p-10'>
+                  <img src={GifMoney} alt="GifMoney" className="rounded-3xl  bg-contain self-stretch flex items-center justify-center sm:py-5  md:my-0 w-full" />
                 </div>
-
-
-                {/* <img src={AnimationGif} alt="AnimationGif" className="bg-[#065373]  self-stretch flex items-center justify-center sm:py-5 -my-10 md:my-0 w-full h-full" /> */}
-                {/* <div className="bg-[#065373]  self-stretch flex items-center justify-center sm:py-5 -my-10 md:my-0 w-full h-full">
-                <div className="bg-white shadow-xl self-center bg-blue-600 rounded-2xl w-52  h-52">
-                  <img src={AnimationGif} alt="AnimationGif" className="absolute  shadow-xl rounded-2xl w-20 h-10" />
-                </div>
-              </div> */}
               </>)}
               {tabIndex === 2 && (<>
-                <div className='overflow-hidden h-full bg-contain'>
-                  <img src={CodeThree} alt="GifMoney" className="bg-[#2E63EA] object-cover h-auto bg-contain self-stretch flex items-center justify-center sm:py-5 -my-10 md:my-0 w-full" />
+                <div className='overflow-hidden h-full bg-contain p-10'>
+                  <img src={GifMoney} alt="GifMoney" className="rounded-3xl object-cover   bg-contain self-stretch flex items-center justify-center sm:py-5 -my-10 md:my-0 w-full" />
                 </div>
-
-                {/* <img src={AnimationGif} alt="AnimationGif" className="bg-[#2E63EA]  self-stretch flex items-center justify-center sm:py-5 -my-10 md:my-0 w-full h-full" /> */}
-                {/* <div className="bg-[#2E63EA]  self-stretch flex items-center justify-center sm:py-5 -my-10 md:my-0">
-                <div className="bg-white shadow-xl self- bg-blue-600 rounded-2xl w-52  h-52">
-                  <div className="absolute shadow-xl rounded-2xl w-20 h-10"></div>
-                </div>
-              </div> */}
               </>)}
             </div>
           </div>

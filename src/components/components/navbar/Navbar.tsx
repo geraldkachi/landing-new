@@ -57,8 +57,8 @@ const Navbar = () => {
         <div className='hidden lg:flex gap-8 text-xl font-normal text-white'>
           <button onClick={() => navigate('/login')} className=''>News</button>
           <button onClick={() => navigate('/register')} className="bg">Forms</button>
-          <button onClick={() => navigate('/register')} className="bg">Login</button>
-          <button onClick={() => navigate('/register')} className="text-[#9E7F56]">Sign up</button>
+          <button onClick={() =>  window.location.href = `https://dashboard.arvopayroll.com/`} className="bg">Login</button>
+          <button onClick={() =>  window.location.href = `https://dashboard.arvopayroll.com/`} className="text-[#9E7F56]">Sign up</button>
         </div>
 
         <div onClick={() => setNav(prev => !prev)} className='block lg:hidden text-black cursor-pointer'>
@@ -89,8 +89,8 @@ const Navbar = () => {
             // handleNav()
           }}>Contact Us</p>
 
-          <button onClick={() => navigate('/')} className="p-5 px-12 text-black mb-5 rounded-2xl border-2 border-black w-full">Login</button>
-          <button onClick={() => navigate('/')} className="bg-black p-5 px-12 rounded-2xl text-white mb-5 w-full">Create Account</button>
+          <button onClick={() =>  window.location.href = `https://dashboard.arvopayroll.com/`} className="p-5 px-12 text-black mb-5 rounded-2xl border-2 border-black w-full">Login</button>
+          <button onClick={() =>   window.location.href = `https://dashboard.arvopayroll.com/`} className="bg-black p-5 px-12 rounded-2xl text-white mb-5 w-full">Create Account</button>
 
         </div>
       </ClickOutside>

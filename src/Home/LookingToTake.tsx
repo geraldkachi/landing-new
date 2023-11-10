@@ -1,15 +1,13 @@
-// import { Button } from "arvara-pckage"
 import LookingToTakeIcon from './lookingtotake.svg'
 import Check from './check-green.svg'
-import {useNavigate} from 'react-router-dom'
-import { Button } from '../components/components'
+// import {useNavigate} from 'react-router-dom'
+// import { Button } from '../components/components'
 
 const LookingToTake = () => {
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
     return (
         <div className="bg-[#043144] px-5 pt-20 pb-10 text-white">
             <div className="text-center max-w-5xl mx-auto">
-                {/* <h1 className='text-bold md:text-4xl text-3xl mb-4'>Looking to take charge of your Finances</h1> */}
                 <h1 className='text-bold md:text-4xl text-3xl mb-4'>Arvo Payroll</h1>
                 <p className="text-base md:text-lg">With the Arvo Payroll System, Companies easily Disburse salary to employees.
                 </p>
@@ -52,18 +50,12 @@ const LookingToTake = () => {
                         </div>
                     </div>
 
-                    <Button type="submit" className=' md:w-auto px-16 p-3 mt-5 bg-white' style={{ background: 'white', color: '#065373' }} onClick={() => navigate('fast-cash')} title="Learn More" />
+                    {/* <Button type="submit" className=' md:w-auto px-16 p-3 mt-5 bg-white' style={{ background: 'white', color: '#065373' }} onClick={() => navigate('fast-cash')} title="Learn More" /> */}
                 </div>
-                <div className='self-center scale-95 overflow-hidden'>
-                    <img className='' src={LookingToTakeIcon} alt="lookingtotake" />
+                <div className='self-center scale-95 overflow-hidden rounded-full bg-center flex items-center justify-center'>
+                    <img src={LookingToTakeIcon} alt="lookingtotake" className="bg-center" />
                 </div>
             </div>
-            {/* Three Dots */}
-            {/* <div className="flex items-center justify-center gap-x-3">
-                <div className="h-3 w-3 bg-white rounded-full"></div>
-                <div className="h-3 w-3 bg-white rounded-full"></div>
-                <div className="h-3 w-3 bg-white rounded-full"></div>
-            </div> */}
         </div>
     )
 }

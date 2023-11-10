@@ -1,5 +1,5 @@
-import { RefObject } from "react";
-// import { Input, Button, Card } from "arvara-pckage";
+import { RefObject, useState } from "react";
+
 
 
 // import FacebookIcon from '../../assets/home/Facebook.svg'
@@ -11,14 +11,15 @@ import AddressIcon from "./AddressIcon";
 import CallIcon from "./CallIcon";
 import SmsIcon from "./SmsIcon";
 import SocialIcon from "./SocialIcon";
+import { Button, Input } from "../components";
 
-// const initalValues = {
-//     firstName: '',
-//     lastName: '',
-//     email: '',
-//     password: '',
-//     phoneNumber: '',
-// }
+const initalValues = {
+    firstName: '',
+    lastName: '',
+    email: '',
+    password: '',
+    phoneNumber: '',
+}
 
 interface ContactProps {
     contact: RefObject<HTMLDivElement> | any
@@ -26,30 +27,30 @@ interface ContactProps {
 
 const FormDetails = ({ contact }: ContactProps) => {
 
-    // const [formValue, setFormValue] = useState(initalValues)
+    const [formValue, setFormValue] = useState(initalValues)
 
-    // const {
-    //     firstName,
-    //     lastName,
-    //     email,
-    //     password,
-    //     phoneNumber,
-    // } = formValue
+    const {
+        firstName,
+        lastName,
+        email,
+        password,
+        phoneNumber,
+    } = formValue
 
-    // const onFinish = (e: React.FormEvent<HTMLFormElement>) => {
-    //     e.preventDefault();
-    //     const values = {
-    //         firstName,
-    //         lastName,
-    //         email,
-    //         password,
-    //         phoneNumber,
-    //     }
-    // }
+    const onFinish = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        const values = {
+            firstName,
+            lastName,
+            email,
+            password,
+            phoneNumber,
+        }
+    }
 
-    // const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    //     setFormValue({ ...formValue, [event.target.name]: (event.target as HTMLInputElement).value })
-    // }
+    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setFormValue({ ...formValue, [event.target.name]: (event.target as HTMLInputElement).value })
+    }
 
     return (
         <div ref={contact} className="bg-[#F6F8F9] text-[#141C1F] px-5 py-10">
@@ -83,7 +84,7 @@ const FormDetails = ({ contact }: ContactProps) => {
                                 <SmsIcon />
                             </div>
                             <p className="font-semibold mb-5">Email</p>
-                            <p>hello@arvofinance.com</p>
+                            <p>hello@arvopayroll.com</p>
                         </div>
                     </div>
 
@@ -102,8 +103,8 @@ const FormDetails = ({ contact }: ContactProps) => {
                     </div>
                 </div>
 
-                <div className="flex  h-full my-16 w-full ">
-                    {/* <Card className="p-5 max-w-2xl mx-auto rounded-3xl shadow-lg w-full">
+                <div className="flex  h-full my-4 w-full ">
+                    <div className="bg-white p-5 max-w-2xl mx-auto rounded-3xl shadow-lg w-full">
                         <form onSubmit={onFinish}>
                             <Input
                                 label="Full Name"
@@ -134,10 +135,10 @@ const FormDetails = ({ contact }: ContactProps) => {
                             </div>
 
                             <div className="mt-8">
-                                <Button variant="link" className="w-full bg-[#065373] !text-[#ffffff] hover:bg-white hover:text-[#065373]">Send Message</Button>
+                                <Button variant="link" className="w-full !bg-[#065373] !text-[#ffffff] hover:bg-white hover:text-[#065373]" title="Send Message" />
                             </div>
                         </form>
-                    </Card> */}
+                    </div>
                 </div>
             </div>
         </div>

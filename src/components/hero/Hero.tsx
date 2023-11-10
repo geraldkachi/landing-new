@@ -16,28 +16,16 @@ const Hero = () => {
         <section className="px-5 grid lg:grid-flow-col place-items-center my-10 h-[60%] mx-auto max-w-[1200px] overflow-hidden">
             <div className='justify-selt-center md:justify-self-start  text-start'>
                 <Rotate top left>
-                    <h1 className='text-5xl my-3'>Empowering Africa's Workforce  {'\n'}
+                    <h1 className='text-5xl my-3 md:leading-[1.3]'>Empowering Africa's Workforce  {'\n'}
                         <span className='block'>Simplifying Payroll, Elevating Businesses.</span></h1>
-                    {/* <h1 className='text-5xl my-3'>Get Loan in {'\n'}
-                        <span className='block'>Minutes</span></h1> */}
                 </Rotate>
                 <Fade bottom>
-                    {/* <p className='text-xl my-5'>Arvo offers easy and convenient financial services<br /> on the go for everyone</p> */}
-                    <p className='text-xl my-5'>Arvo Payroll: Transforming Traditional Payroll  <br /> into Seamless Efficiency, One Employee at a Time.</p>
-                    <button onClick={() => navigate('register')} className="bg-black p-5 px-12 rounded-xl text-white mb-5">Create Web Account</button>
-                    {/* Google app */}
-                    <div className="flex items-center md:mt-5">
-                        <img className='cursor-pointer' src={GooglePlayHome} alt="GooglePlayHome" onClick={() => window.location.href = 'https://arvofinance.page.link/download-app'} />
-                        &nbsp;
-                        &nbsp;
-                        &nbsp;
-                        &nbsp;
-                        <img className='cursor-pointer' src={AppleStoreHome} alt="AppleStoreHome" onClick={() => window.location.href = 'https://arvofinance.page.link/download-app'} />
-                    </div>
+                    <p className='text-xl my-5'>Arvo Payroll: Transforming Traditional Payroll  <br /> into Seamless Efficiency.</p>
+                    <button  onClick={() =>  window.location.href = `https://dashboard.arvopayroll.com/`} className="bg-black p-5 px-12 rounded-xl text-white mb-5">Create Account</button>
+                    
+
                 </Fade>
-                <LightSpeed left>
-                    <p className="py-3 text-base">Trusted by 1,500,000+ Customers</p>
-                </LightSpeed>
+            
             </div>
 
             <div className='relative my-10 py-3'>

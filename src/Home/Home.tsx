@@ -41,9 +41,9 @@ const Home: FC = () => {
       <WhyArvo {...{ whyavro }} />
       <div className="bg-[#F0FAFE]">
         <LookingToTake />
-        <ZeroExtra />
+        {/* <ZeroExtra /> */}
         <Paywith />
-        <Bank {...{ product }} />
+        {/* <Bank {...{ product }} /> */}
         {/* <MakeCardless /> */}
       </div>
       {/* <StartedAvro />s */}

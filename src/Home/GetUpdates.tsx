@@ -38,7 +38,7 @@ const GetUpdates = () => {
               <div className="md:mr-auto mb-6 md:mb-0">
                 <Button
                   type="submit"
-                  className="inline-block rounded-lg px-6 py-3 border-2 border-white text-white font-medium text-xs leading-tight uppercase hover:bg-[ #065373] hover:bg-opacity-1 focus:outline-none focus:ring-0 transition duration-150 ease-in-out" title="Submit" />
+                  className="!bg-[#065373] inline-block rounded-lg !px-6 !py-3 border-2 border-white text-white font-medium text-xs leading-tight uppercase hover:bg-[#065373] hover:bg-opacity-1 focus:outline-none focus:ring-0 transition duration-150 ease-in-out" title="Submit" />
                   
               </div>
             </div>
