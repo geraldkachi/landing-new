@@ -21,6 +21,6 @@ const Home = () => {
     const contact = useRef();
     const product = useRef();
     const faqs = useRef();
-    return (_jsxs("section", { className: "", children: [_jsx(Navbar, { faqs, whyavro, contact, product, nav, setNav, scrollToSection }), _jsx(Hero, {}), _jsx(Progress, {}), _jsx(WhyArvo, { whyavro }), _jsxs("div", { className: "bg-[#F0FAFE]", children: [_jsx(LookingToTake, {}), _jsx(Paywith, {})] }), _jsx(FormDetails, { contact }), _jsx(GetUpdates, {}), _jsx(Footer, { whyavro, contact, scrollToSection }), _jsx(ScrollToTop, { className: "flex items-center justify-center", children: _jsx("img", { src: ScrollIcon, alt: "ScrollIcon" }) })] }));
+    return (_jsxs("section", { className: "", children: [_jsx(Navbar, { faqs, whyavro, contact, product, nav, setNav, scrollToSection }), _jsx(Hero, { scrollToSection, contact }), _jsx(Progress, {}), _jsx(WhyArvo, { whyavro }), _jsxs("div", { className: "bg-[#F0FAFE]", children: [_jsx(LookingToTake, {}), _jsx(Paywith, {})] }), _jsx(FormDetails, { contact }), _jsx(GetUpdates, {}), _jsx(Footer, { whyavro, contact, scrollToSection }), _jsx(ScrollToTop, { className: "flex items-center justify-center", children: _jsx("img", { src: ScrollIcon, alt: "ScrollIcon" }) })] }));
 };
 export default Home;

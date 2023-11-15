@@ -1,3 +1,4 @@
+import { RefObject } from 'react'
 import YellowHero from '../../assets/home/YelloHero'
 // import LandingPhone from '../../images/login/nmn.svg'
 import LandingPhone from '/africa.svg'
@@ -7,8 +8,11 @@ import LandingPhone from '/africa.svg'
 import { Rotate, Fade } from "react-reveal"
 //@ts-ignore
 import Jump from "react-reveal"
-
-const Hero = () => {
+interface Props {
+    scrollToSection: (n: RefObject<HTMLDivElement> | any) => void,
+    contact: RefObject<HTMLDivElement> | any
+}
+const Hero = ({ scrollToSection, contact}: Props) => {
 
     return (
         <section className="px-5 grid lg:grid-flow-col place-items-center my-10 h-[60%] mx-auto max-w-[1200px] overflow-hidden">
@@ -19,7 +23,7 @@ const Hero = () => {
                 </Rotate>
                 <Fade bottom>
                     <p className='text-xl my-5'>Transforming Traditional Payroll  <br /> into Seamless Efficiency.</p>
-                    <button  onClick={() =>  window.location.href = `https://dashboard.arvopayroll.com/`} className="bg-[#065373] p-5 px-12 rounded-xl text-white mb-5">Contact Us</button>
+                    <button  onClick={() =>   scrollToSection(contact)} className="bg-[#065373] p-5 px-12 rounded-xl text-white mb-5">Contact Us</button>
                     
 
                 </Fade>

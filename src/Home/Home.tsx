@@ -36,7 +36,7 @@ const Home: FC = () => {
         {...{ nav, setNav }}
         {...{ scrollToSection }}
       />
-      <Hero />
+      <Hero {...{ scrollToSection, contact }} />
       <Progress />
       <WhyArvo {...{ whyavro }} />
       <div className="bg-[#F0FAFE]">
