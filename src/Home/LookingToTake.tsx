@@ -9,7 +9,7 @@ const LookingToTake = () => {
         <div className="bg-[#043144] px-5 pt-20 pb-10 text-white">
             <div className="text-center max-w-5xl mx-auto">
                 <h1 className='text-bold md:text-4xl text-3xl mb-4'>Arvo Payroll</h1>
-                <p className="text-base md:text-lg">With the Arvo Payroll System, Companies easily Disburse salary to employees.
+                <p className="text-base md:text-lg">With the Arvo payroll system, companies easily Disburse salary to employees.
                 </p>
             </div>
             <div className="max-w-[1300px] my-10 grid lg:grid-cols-2 place-items-center  mx-auto">
@@ -23,7 +23,7 @@ const LookingToTake = () => {
                         <div>
                             <div className='pb-5'>
                                 <img className='inline-flex' src={Check} alt="checkicon" /> &nbsp;
-                                <p className='inline sm:inline-flex text-sm sm:text-base mb-3'>Customer-Centric Support:</p>
+                                <p className='inline sm:inline-flex text-sm sm:text-base mb-3'>Customer-Centric Support</p>
                             </div>
                             <div className='pb-5'>
                                 <img className='inline-flex' src={Check} alt="checkicon" /> &nbsp;

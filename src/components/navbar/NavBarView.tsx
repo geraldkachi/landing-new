@@ -67,8 +67,8 @@ const Navbar = ({ whyavro, scrollToSection, contact, nav, setNav }: NavBarProps)
         </div>
         <div className=' items-center flex gap-1'>
           <div className='hidelogin lg:flex gap-4 text-base font-bold'>
-            <button  onClick={() =>  window.location.href = `https://dashboard.arvopayroll.com/`} className='bg-white border-[#065373] border-2 p-3 px-7 rounded-xl text-[#065373]'>Sign In</button>
-            <button  onClick={() =>  window.location.href = `https://dashboard.arvopayroll.com/`} className="bg-[#065373] p-3 px-12 rounded-xl text-white">Create Account</button>
+            {/* <button  onClick={() =>  window.location.href = `https://dashboard.arvopayroll.com/`} className='bg-white border-[#065373] border-2 p-3 px-7 rounded-xl text-[#065373]'>Sign In</button> */}
+            <button  onClick={() =>  window.location.href = `https://dashboard.arvopayroll.com/`} className="bg-[#065373] p-3 px-12 rounded-xl text-white">Sign In</button>
           </div>
 
           <div onClick={handleNav} className='block lg:hidden text-black cursor-pointer'>
@@ -88,22 +88,13 @@ const Navbar = ({ whyavro, scrollToSection, contact, nav, setNav }: NavBarProps)
               scrollToSection(whyavro)
               handleNav()
             }}>Why Arvo Payroll</p>
-            {/* <p className='p-4 cursor-pointer mb-4' onClick={() => {
-              scrollToSection(whyavro)
-              handleNav()
-            }}>Products</p> */}
-            {/* <p className='p-4 cursor-pointer mb-4'><Link to="" onClick={() => {
-              scrollToSection(faqs)
-              handleNav()
-            }}>FAQs</Link></p> */}
-            {/* <p className='p-4 cursor-pointer mb-4'><Link to="/faqs" onClick={() => handleNav() }>Blogs</Link></p> */}
             <p className='p-4 cursor-pointer mb-4' onClick={() => {
               scrollToSection(contact)
               handleNav()
             }}>Contact Us</p>
 
-            <button  onClick={() =>  window.location.href = `https://dashboard.arvopayroll.com/`} className="p-5 px-12 text-black mb-5 rounded-2xl border-2 border-black w-full">Login</button>
-            <button  onClick={() =>  window.location.href = `https://dashboard.arvopayroll.com/`} className="bg-black p-5 px-12 rounded-2xl text-white mb-5 w-full">Create Account</button>
+            <button  onClick={() =>  window.location.href = `https://dashboard.arvopayroll.com/`} className="p-5 px-12 text-[#065373] mb-5 rounded-2xl border-2 border-[#065373] w-full">Sign In</button>
+            {/* <button  onClick={() =>  window.location.href = `https://dashboard.arvopayroll.com/`} className="bg-[#065373] p-5 px-12 rounded-2xl text-white mb-5 w-full">Create Account</button> */}
 
           </div>
         </ClickOutside>

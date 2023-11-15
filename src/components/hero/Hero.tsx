@@ -1,16 +1,14 @@
 import YellowHero from '../../assets/home/YelloHero'
 // import LandingPhone from '../../images/login/nmn.svg'
 import LandingPhone from '/africa.svg'
-import GooglePlayHome from "./GooglePlayHome.svg"
-import AppleStoreHome from "./AppleStoreHome.svg"
-import {  useNavigate } from 'react-router-dom'
+// import GooglePlayHome from "./GooglePlayHome.svg"
+// import AppleStoreHome from "./AppleStoreHome.svg"
 //@ts-ignore
-import { Rotate, Fade, LightSpeed } from "react-reveal"
+import { Rotate, Fade } from "react-reveal"
 //@ts-ignore
 import Jump from "react-reveal"
 
 const Hero = () => {
-    const navigate = useNavigate()
 
     return (
         <section className="px-5 grid lg:grid-flow-col place-items-center my-10 h-[60%] mx-auto max-w-[1200px] overflow-hidden">
@@ -20,8 +18,8 @@ const Hero = () => {
                         <span className='block'>Simplifying Payroll, Elevating Businesses.</span></h1>
                 </Rotate>
                 <Fade bottom>
-                    <p className='text-xl my-5'>Arvo Payroll: Transforming Traditional Payroll  <br /> into Seamless Efficiency.</p>
-                    <button  onClick={() =>  window.location.href = `https://dashboard.arvopayroll.com/`} className="bg-black p-5 px-12 rounded-xl text-white mb-5">Create Account</button>
+                    <p className='text-xl my-5'>Transforming Traditional Payroll  <br /> into Seamless Efficiency.</p>
+                    <button  onClick={() =>  window.location.href = `https://dashboard.arvopayroll.com/`} className="bg-[#065373] p-5 px-12 rounded-xl text-white mb-5">Contact Us</button>
                     
 
                 </Fade>
